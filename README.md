@@ -62,4 +62,6 @@ python3 build.py MODEL=xc200
 
 公共 UART 接口和产品接入示例见 [UART 模块说明](docs/uart.md)。
 
+构建按当前产品的组件依赖裁剪，XC100 不编译 LVGL，XC200 通过 `PRIV_REQUIRES lvgl` 使用它。`xf_common/components/common` 下的源文件和头文件目录自动收集；新增独立组件仍需声明依赖，详见 [公共组件构建与项目隔离](docs/common-build.md)。
+
 公共组件的分层边界、参考总结和本次改造说明见 [公共框架分层说明](docs/component-layering-review.md)，主机回归测试见 [测试说明](tests/common/README.md)。

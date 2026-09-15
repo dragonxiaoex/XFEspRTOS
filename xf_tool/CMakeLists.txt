@@ -93,6 +93,10 @@ set(EXTRA_COMPONENT_DIRS
     ${XF_PROJECT_DIR}/
 )
 
+# 只构建启动入口、当前产品及其递归依赖；搜索到组件不代表必须编译。
+# 组件依赖由各自的 REQUIRES / PRIV_REQUIRES 声明。
+set(COMPONENTS xf_common "${MODEL}")
+
 set(PROJECT_VERSION "unknown")
 
 if(EXISTS ${PROJECT_CONFIG})
