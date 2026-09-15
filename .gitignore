@@ -1,0 +1,24 @@
+# ESP-IDF 构建输出
+/xf_tool/build/
+/project/*/build/
+
+# 测试源码保留，仅忽略测试目录下的本地构建输出。
+/tests/**/build/
+/xf_tool/tests/**/build/
+
+# Python 自动生成的字节码缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 本地运行和测试日志
+*.log
+
+# 完整配置与导出文件由 ESP-IDF 生成，维护输入使用 *.conf。
+/xf_tool/sdkconfig
+/xf_tool/sdkconfig.old
+/xf_tool/sdkconfig.defaults
+/project/*/sdkconfig
+/project/*/sdkconfig.old
+/xf_common/sdkconfig
+/xf_common/sdkconfig.old
