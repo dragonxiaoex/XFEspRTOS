@@ -1,0 +1,4 @@
+# ESP32-P4 公共分区表，先使用单应用布局。
+# Name,             Type, SubType, Offset,  Size,   Flags
+nvs,                data, nvs,     0x9000,  0x6000,
+xf_app_partition,   app,  factory, 0x10000, 1M,

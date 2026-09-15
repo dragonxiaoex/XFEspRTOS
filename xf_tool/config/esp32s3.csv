@@ -1,0 +1,4 @@
+# ESP32-S3 公共分区表，沿用 XC200 当前的单应用布局。
+# Name,   Type, SubType, Offset,  Size,   Flags
+nvs,      data, nvs,     0x9000,  0x7000,
+xf_app_partition,  app,  factory, 0x10000, 7M,
